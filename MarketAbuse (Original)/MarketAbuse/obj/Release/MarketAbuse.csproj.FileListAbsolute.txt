@@ -1,0 +1,10 @@
+\\READYSHARE\USB_Storage\Projects\MarketAbuse\MarketAbuse\bin\Release\MarketAbuse.exe.config
+\\READYSHARE\USB_Storage\Projects\MarketAbuse\MarketAbuse\bin\Release\MarketAbuse.exe
+\\READYSHARE\USB_Storage\Projects\MarketAbuse\MarketAbuse\bin\Release\MarketAbuse.pdb
+\\READYSHARE\USB_Storage\Projects\MarketAbuse\MarketAbuse\obj\Release\MarketAbuse.MarketAbuse.resources
+\\READYSHARE\USB_Storage\Projects\MarketAbuse\MarketAbuse\obj\Release\MarketAbuse.CreationForm.resources
+\\READYSHARE\USB_Storage\Projects\MarketAbuse\MarketAbuse\obj\Release\MarketAbuse.Properties.Resources.resources
+\\READYSHARE\USB_Storage\Projects\MarketAbuse\MarketAbuse\obj\Release\MarketAbuse.csproj.GenerateResource.Cache
+\\READYSHARE\USB_Storage\Projects\MarketAbuse\MarketAbuse\obj\Release\MarketAbuse.exe
+\\READYSHARE\USB_Storage\Projects\MarketAbuse\MarketAbuse\obj\Release\MarketAbuse.pdb
+\\READYSHARE\USB_Storage\Projects\MarketAbuse\MarketAbuse\obj\Release\MarketAbuse.csprojResolveAssemblyReference.cache

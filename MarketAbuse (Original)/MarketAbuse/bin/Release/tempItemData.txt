@@ -1,0 +1,1 @@
+{"overall":26941564,"buying":26980991,"buyingQuantity":12,"selling":26905170,"sellingQuantity":13}

@@ -1,0 +1,78 @@
+﻿<Window x:Class="MainMarketForm.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MainMarketForm"
+        mc:Ignorable="d"
+        Title="Market Abuse v3" Width="300"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        FontSize="14" FontFamily="Segoe UI Light"
+        Background="#FF282828"
+        WindowStyle="None"
+        Foreground="White"
+        SizeToContent="WidthAndHeight"
+        >
+    
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="27"/>
+    </WindowChrome.WindowChrome>
+    
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <Style x:Key="ContentButton" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="DockPanel.Dock" Value="Right"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Width" Value="25"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#464646"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="#282828">
+        <!--Title Buttons-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="5" />
+        </Grid.RowDefinitions>
+        
+        
+        <TextBlock x:Name="Title" Grid.Row="0" Text="Settings"
+                   TextAlignment="Center" 
+                   FontSize="20"/>
+        
+        <StackPanel Grid.ColumnSpan="5" WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button x:Name="CloseButton" Style="{StaticResource ContentButton}">
+                <Image Source="/Resources/Close.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+            </Button>
+        </StackPanel>
+
+        <Rectangle x:Name="BackColor" Grid.Row="1" Fill="#464646"/>
+
+        <Border Grid.Row="1" Margin="5" BorderThickness="1" BorderBrush="#666666">
+            <StackPanel x:Name="gridArea">
+                <!--
+                This is where items are put programatically
+                -->
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

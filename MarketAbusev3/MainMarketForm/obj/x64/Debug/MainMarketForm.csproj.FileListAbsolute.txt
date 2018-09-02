@@ -1,0 +1,21 @@
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\x64\Debug\Market Abuse.exe.config
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\x64\Debug\Market Abuse.exe
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\x64\Debug\Market Abuse.pdb
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\x64\Debug\Newtonsoft.Json.xml
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\Forms\MainWindow.g.cs
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\Forms\Settings.g.cs
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\Forms\SplashScreen.g.cs
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\App\App.g.cs
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\Market Abuse_MarkupCompile.cache
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\Market Abuse_MarkupCompile.lref
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\App\App.baml
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\Forms\MainWindow.baml
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\Forms\Settings.baml
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\Forms\SplashScreen.baml
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\Market Abuse.g.resources
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\MainMarketForm.Properties.Resources.resources
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\MainMarketForm.csproj.GenerateResource.Cache
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\MainMarketForm.csproj.CoreCompileInputs.cache
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\Market Abuse.exe
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\x64\Debug\Market Abuse.pdb

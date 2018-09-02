@@ -1,0 +1,20 @@
+C:\Users\Chaos\Desktop\MarketAbuseRevamped\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Chaos\Desktop\MarketAbuseRevamped\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.Properties.Resources.resources
+C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.MainForm.resources
+C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.csproj.GenerateResource.Cache
+C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.exe
+C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.pdb
+C:\Users\Chaos\Desktop\MarketAbuseRevamped\bin\Debug\MarketAbuseRevamped.exe
+C:\Users\Chaos\Desktop\MarketAbuseRevamped\bin\Debug\MarketAbuseRevamped.pdb
+C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.csprojResolveAssemblyReference.cache
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbuseRevamped\bin\Debug\MarketAbuseRevamped.exe
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbuseRevamped\bin\Debug\MarketAbuseRevamped.pdb
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbuseRevamped\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbuseRevamped\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.csprojResolveAssemblyReference.cache
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.Properties.Resources.resources
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.MainForm.resources
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.csproj.GenerateResource.Cache
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.exe
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbuseRevamped\obj\Debug\MarketAbuseRevamped.pdb

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{C746DFE5-CFB0-4FB0-A007-84784C11F452}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>MarketAbuseRevamped</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.22, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MarketAbuseRevamped.Properties\Resources.cs" />
+    <Compile Include="MarketAbuseRevamped.Properties\Settings.cs" />
+    <Compile Include="MarketAbuseRevamped\Creation.cs" />
+    <Compile Include="MarketAbuseRevamped\CreationLists.cs" />
+    <Compile Include="MarketAbuseRevamped\CreationSet.cs" />
+    <Compile Include="MarketAbuseRevamped\Creation_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketAbuseRevamped\Item.cs" />
+    <Compile Include="MarketAbuseRevamped\ItemDataGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketAbuseRevamped\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketAbuseRevamped\Program.cs" />
+    <Compile Include="MarketAbuseRevamped\Shop.cs" />
+    <Compile Include="MarketAbuseRevamped\ShopItem.cs" />
+    <Compile Include="MarketAbuseRevamped\ShopList.cs" />
+    <Compile Include="MarketAbuseRevamped\Skills.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MarketAbuseRevamped.Properties\Resources.resx" />
+    <EmbeddedResource Include="MarketAbuseRevamped\MainForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

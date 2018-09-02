@@ -1,0 +1,45 @@
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\Release\Market Abuse.exe.config
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\Release\Market Abuse.exe
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\Release\Market Abuse.pdb
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\Release\Newtonsoft.Json.dll
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\Release\Newtonsoft.Json.xml
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\MainWindow.g.cs
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\Settings.g.cs
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\SplashScreen.g.cs
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\App\App.g.cs
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Market Abuse_MarkupCompile.cache
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Market Abuse_MarkupCompile.lref
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\App\App.baml
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\MainWindow.baml
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\Settings.baml
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\SplashScreen.baml
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Market Abuse.g.resources
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\MainMarketForm.Properties.Resources.resources
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\MainMarketForm.csproj.GenerateResource.Cache
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\MainMarketForm.csproj.CoreCompileInputs.cache
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Market Abuse.exe
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Market Abuse.pdb
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\MainMarketForm.csprojResolveAssemblyReference.cache
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\Release\Market Abuse.exe.config
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\Release\Market Abuse.exe
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\Release\Market Abuse.pdb
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\Release\Newtonsoft.Json.dll
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\bin\Release\Newtonsoft.Json.xml
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\MainMarketForm.csprojAssemblyReference.cache
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\MainWindow.g.cs
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\Settings.g.cs
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\SplashScreen.g.cs
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\App\App.g.cs
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Market Abuse_MarkupCompile.cache
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Market Abuse_MarkupCompile.lref
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\App\App.baml
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\MainWindow.baml
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\Settings.baml
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Forms\SplashScreen.baml
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Market Abuse.g.resources
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\MainMarketForm.Properties.Resources.resources
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\MainMarketForm.csproj.GenerateResource.cache
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\MainMarketForm.csproj.CoreCompileInputs.cache
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\MainMarketForm.csproj.CopyComplete
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Market Abuse.exe
+D:\Long Term Storage\My Computer - 2018\My Documents\Visual Studio 2017\Projects\MarketAbusev3\MainMarketForm\obj\Release\Market Abuse.pdb

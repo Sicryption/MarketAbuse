@@ -1,0 +1,6 @@
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\bin\Release\Updater.exe.config
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\bin\Release\Updater.exe
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\bin\Release\Updater.pdb
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\obj\Release\Updater.csproj.CoreCompileInputs.cache
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\obj\Release\Updater.exe
+C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\obj\Release\Updater.pdb
