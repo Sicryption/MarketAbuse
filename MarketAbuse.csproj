@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Version>4.0.0</Version>
+    <Authors>Sicryption</Authors>
+    <Description>Application designed to assist in flipping of items off the OSRS Grand Exchange</Description>
+    <RepositoryUrl>https://github.com/Sicryption/MarketAbuse</RepositoryUrl>
+    <Win32Resource></Win32Resource>
+    <ApplicationIcon>CoinsIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CoinsIcon.png" />
+    <None Remove="Forms\Images\Favorited_False_Icon.png" />
+    <None Remove="Forms\Images\Favorited_True_Icon.png" />
+    <None Remove="Forms\Images\Long_Term_Graph_Icon.png" />
+    <None Remove="Forms\Images\Short_Term_Graph_Icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Forms\App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="Forms\App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Forms\Images\Favorited_False_Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Forms\Images\Favorited_True_Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Forms\Images\Long_Term_Graph_Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Forms\Images\Short_Term_Graph_Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Forms\TimeSeriesDisplay.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
+
+</Project>

@@ -1,5 +1,0 @@
-[MoneyLimiter]True
-[MoneyLimiterAmount]5000000
-[Members]True
-[AlchemyTab]False
-[Theme]2016

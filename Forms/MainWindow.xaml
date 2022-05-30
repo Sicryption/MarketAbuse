@@ -1,0 +1,129 @@
+﻿<Window x:Class="MarketAbuse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarketAbuse"
+        xmlns:converters="clr-namespace:MarketAbuse.Converters"
+        mc:Ignorable="d"
+        Name="Main"
+        Title="Market Abuse" Height="450" Width="800">
+    <Window.Resources>
+        <converters:ByteArrayToBitmapImageConverter x:Key="byteToImageConverter"/>
+        <converters:BoolToFavoritedImageConverter x:Key="boolToFavoritedImageConverter"/>
+        <converters:UtcToLocalDateTimeConverter x:Key="utcToLocalTimeConverter"/>
+    </Window.Resources>
+
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Menu x:Name="Menu" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <TextBox Grid.Row="0" Name="SearchBox" Text="Search" TextChanged="SearchBox_TextChanged"/>
+            <ListBox Grid.Row="1" Name="ItemListbox" ItemsSource="{Binding Path=ItemViewModelList.ItemList}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Height="15" Width="15" Margin="-5,0,5,0"
+                                   Source="{Binding IsFavorited, Converter={StaticResource boolToFavoritedImageConverter}}" 
+                                   Tag="{Binding}"
+                                   MouseLeftButtonDown="FavoriteItemClicked" RenderOptions.BitmapScalingMode="HighQuality" />
+                            <TextBlock Text="{Binding Information.Name}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="75"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Top">
+                <Image
+                    Source="{Binding SelectedItem.IsFavorited, ElementName=ItemListbox, Converter={StaticResource boolToFavoritedImageConverter}}"
+                    Tag="{Binding SelectedItem, ElementName=ItemListbox}"
+                    MouseLeftButtonDown="FavoriteItemClicked" 
+                    RenderOptions.BitmapScalingMode="HighQuality" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+                <Image Source="Images/Long_Term_Graph_Icon.png" MouseLeftButtonDown="ShowLongTermGraphClicked" RenderOptions.BitmapScalingMode="HighQuality"/>
+                <Image Source="Images/Short_Term_Graph_Icon.png" MouseLeftButtonDown="ShowShortTermGraphClicked" RenderOptions.BitmapScalingMode="HighQuality"/>
+            </StackPanel>
+            
+            <StackPanel Grid.Column="0">
+                <Image Source="{Binding SelectedItem.Image.Image, ElementName=ItemListbox, Converter={StaticResource byteToImageConverter}}" Width="32" Height="32"/>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Name:"/>
+                    <Label Content="{Binding SelectedItem.Information.Name, ElementName=ItemListbox}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Item ID:"/>
+                    <Label Content="{Binding SelectedItem.Prices.Id, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Buy limit:"/>
+                    <Label Content="{Binding SelectedItem.Information.BuyLimit, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Buy Price:"/>
+                    <Label Content="{Binding SelectedItem.Prices.BuyPrice, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Buy Price Timestamp:"/>
+                    <Label Content="{Binding SelectedItem.Prices.BuyPriceTimestamp, ElementName=ItemListbox, Converter={StaticResource utcToLocalTimeConverter}}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Sell Price:"/>
+                    <Label Content="{Binding SelectedItem.Prices.SellPrice, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Sell Price Timestamp:"/>
+                    <Label Content="{Binding SelectedItem.Prices.SellPriceTimestamp, ElementName=ItemListbox, Converter={StaticResource utcToLocalTimeConverter}}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Average Buy Price:"/>
+                    <Label Content="{Binding SelectedItem.AveragePrices.AverageHighPrice, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Average Sell Price:"/>
+                    <Label Content="{Binding SelectedItem.AveragePrices.AverageLowPrice, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Sell Quantity:"/>
+                    <Label Content="{Binding SelectedItem.AveragePrices.LowPriceVolume, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Buy Quantity:"/>
+                    <Label Content="{Binding SelectedItem.AveragePrices.HighPriceVolume, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Profit Per:"/>
+                    <Label Content="{Binding SelectedItem.ProfitAmount, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Max potential profit (4h):"/>
+                    <Label Content="{Binding SelectedItem.MaxPotentialProfit, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

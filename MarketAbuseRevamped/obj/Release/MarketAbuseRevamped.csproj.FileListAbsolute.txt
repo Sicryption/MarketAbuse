@@ -1,9 +1,0 @@
-C:\Users\Chaos\Desktop\MarketAbuseRevamped\bin\Release\MarketAbuseRevamped.exe
-C:\Users\Chaos\Desktop\MarketAbuseRevamped\bin\Release\MarketAbuseRevamped.pdb
-C:\Users\Chaos\Desktop\MarketAbuseRevamped\bin\Release\DevComponents.DotNetBar2.dll
-C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Release\MarketAbuseRevamped.Properties.Resources.resources
-C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Release\MarketAbuseRevamped.MainForm.resources
-C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Release\MarketAbuseRevamped.csproj.GenerateResource.Cache
-C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Release\MarketAbuseRevamped.exe
-C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Release\MarketAbuseRevamped.pdb
-C:\Users\Chaos\Desktop\MarketAbuseRevamped\obj\Release\MarketAbuseRevamped.csprojResolveAssemblyReference.cache
