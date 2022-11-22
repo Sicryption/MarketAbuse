@@ -38,10 +38,20 @@ jobs:
         with:
           project: "MarketAbuse.csproj"
 
+      - name: Create auto-updater descriptor
+        uses: finnp/create-file-action@1.0.0
+        env:
+          FILE_NAME: "MarketAbuseAutoUpdater.xml"
+          FILE_DATA: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+                      <item>
+                        <version>${{ steps.get_version.outputs.version }}</version>
+                        <url>https://github.com/Sicryption/MarketAbuse/releases/download/v${{ steps.get_version.outputs.version }}/MarketAbuse.zip</url>
+                        <mandatory>false</mandatory></item>"
+
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "MarketAbuse.zip"
+          artifacts: "MarketAbuse.zip,MarketAbuseAutoUpdater.xml"
           tag: "v${{ steps.get_version.outputs.version }}"
           body: "Automated release. Windows binary can be found attached."
       
