@@ -1,0 +1,47 @@
+name: Create-Release
+
+on: 
+  push:
+    branches:
+      - 'master'
+jobs:
+  Create-Release:
+    runs-on: windows-latest
+    steps:
+      - name: Build info
+        run: |
+          echo "${{ github.event_name }} triggered, starting Build."
+          echo "Spinning up a ${{ runner.os }} server!"
+          echo "Cheecking out ${{ github.repository }}/${{ github.ref }}."
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up .NET build framework
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '3.1.x'
+
+      - name: Build project
+        run: |
+          dotnet build MarketAbuse.csproj --configuration Release
+
+      - name: Zip-up project
+        uses: vimtor/action-zip@v1
+        with:
+          files: bin/Release/netcoreapp3.1
+          dest: MarketAbuse.zip
+
+      - name: Get release version
+        uses: bbonkr/get-version-action@v1.0.4
+        id: get_version
+        with:
+          project: "MarketAbuse.csproj"
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "MarketAbuse.zip"
+          tag: "v${{ steps.get_version.outputs.version }}"
+          body: "Automated release. Windows binary can be found attached."
+      

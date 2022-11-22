@@ -1,0 +1,27 @@
+name: Build
+on:
+  push:
+    branches:
+      - '*'
+      - '!master'
+jobs:
+  Build:
+    runs-on: windows-latest
+    steps:
+      - name: Build info
+        run: |
+          echo "${{ github.event_name }} triggered, starting Build."
+          echo "Spinning up a ${{ runner.os }} server!"
+          echo "Cheecking out ${{ github.repository }}/${{ github.ref }}."
+          
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up .NET build framework
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '3.1.x'
+
+      - name: Build project
+        run: |
+          dotnet build MarketAbuse.csproj --configuration Release

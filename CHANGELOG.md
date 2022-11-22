@@ -11,3 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Added a Changelog and README to further explain the project
+- Added automated build & release cycles via GitHub actions
