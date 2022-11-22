@@ -10,6 +10,8 @@ using MarketAbuse.Sorts;
 using MarketAbuse.Settings;
 using MarketAbuse.Forms.Menus;
 
+using AutoUpdaterDotNET;
+
 namespace MarketAbuse
 {
     public partial class MainWindow : Window
@@ -18,6 +20,47 @@ namespace MarketAbuse
         {
             InitializeComponent();
 
+            AutoUpdater.Synchronous = true;
+            AutoUpdater.CheckForUpdateEvent += AutoUpdater_CheckForUpdateEvent;
+            AutoUpdater.Start("https://github.com/Sicryption/MarketAbuse/releases/latest/download/MarketAbuseAutoUpdater.xml");
+        }
+
+        private void AutoUpdater_CheckForUpdateEvent(UpdateInfoEventArgs args)
+        {
+            bool continueLoading = true;
+
+            if (args.Error == null)
+            {
+                if (args.IsUpdateAvailable)
+                {
+                    MessageBoxResult dialogResult = MessageBox.Show(
+                                $@"There is new version {args.CurrentVersion} available. You are using version {
+                                        args.InstalledVersion
+                                    }. Do you want to update the application now?", @"Update Available",
+                                MessageBoxButton.YesNo);
+
+
+                    if (dialogResult == MessageBoxResult.Yes || dialogResult == MessageBoxResult.OK)
+                    {
+                        continueLoading = false;
+                        AutoUpdater.DownloadUpdate(args);
+                        this.Close();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show(args.Error.Message, args.Error.GetType().ToString());
+            }
+
+            if(continueLoading)
+            {
+                loadItemInfomation();
+            }
+        }
+
+        private void loadItemInfomation()
+        {
             itemViewModelList = new OSRSItemViewModelList(new AlphabeticalSort(), new NoFilter());
             settingsLoader = new ApplicationSettingsLoader(this);
 
