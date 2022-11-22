@@ -1,7 +1,0 @@
-C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\bin\Debug\Updater.exe.config
-C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\bin\Debug\Updater.exe
-C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\bin\Debug\Updater.pdb
-C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\obj\Debug\Updater.csproj.CoreCompileInputs.cache
-C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\obj\Debug\Updater.exe
-C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\obj\Debug\Updater.pdb
-C:\Users\Chaos\Documents\Visual Studio 2017\Projects\MarketAbusev3\Updater\obj\Debug\Updater.csprojResolveAssemblyReference.cache
