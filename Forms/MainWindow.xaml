@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarketAbuse"
         xmlns:converters="clr-namespace:MarketAbuse.Converters"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True"
         mc:Ignorable="d"
         Name="Main"
         Title="Market Abuse" Height="450" Width="800">
@@ -13,11 +15,10 @@
         <converters:BoolToFavoritedImageConverter x:Key="boolToFavoritedImageConverter"/>
         <converters:UtcToLocalDateTimeConverter x:Key="utcToLocalTimeConverter"/>
     </Window.Resources>
-
     <Grid>
         
         <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
+            <RowDefinition Height="50"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
@@ -30,11 +31,11 @@
 
         <Grid Grid.Column="0" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="20"/>
+                <RowDefinition Height="30"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             
-            <TextBox Grid.Row="0" Name="SearchBox" Text="Search" TextChanged="SearchBox_TextChanged"/>
+            <TextBox Grid.Row="0" Name="SearchBox" Text="Search" TextChanged="SearchBox_TextChanged" Height="30" Margin="1"/>
             <ListBox Grid.Row="1" Name="ItemListbox" ItemsSource="{Binding Path=ItemViewModelList.ItemList}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>

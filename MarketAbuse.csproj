@@ -32,6 +32,7 @@
   <ItemGroup>
     <PackageReference Include="Autoupdater.NET.Official" Version="1.7.6" />
     <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="ModernWpfUI" Version="0.9.4" />
   </ItemGroup>
 
   <ItemGroup>
