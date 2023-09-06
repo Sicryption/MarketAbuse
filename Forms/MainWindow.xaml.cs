@@ -16,6 +16,8 @@ namespace MarketAbuse
 {
     public partial class MainWindow : Window
     {
+        static string DEFAULT_SEARCHBOX_TEXT = "Search";
+
         public MainWindow()
         {
             InitializeComponent();
@@ -23,6 +25,8 @@ namespace MarketAbuse
             AutoUpdater.Synchronous = true;
             AutoUpdater.CheckForUpdateEvent += AutoUpdater_CheckForUpdateEvent;
             AutoUpdater.Start("https://github.com/Sicryption/MarketAbuse/releases/latest/download/MarketAbuseAutoUpdater.xml");
+
+            SearchBox.Text = DEFAULT_SEARCHBOX_TEXT;
         }
 
         private void AutoUpdater_CheckForUpdateEvent(UpdateInfoEventArgs args)
@@ -226,5 +230,30 @@ namespace MarketAbuse
         private FavoritedItemsSettingsLoader favoritedItemsSettingsLoader;
         public FilterMenu FilterMenu = new FilterMenu();
         public SortMenu SortMenu = new SortMenu();
+
+        private void SearchBox_GotKeyboardFocus(object sender, System.Windows.Input.KeyboardFocusChangedEventArgs e)
+        {
+            if(sender == SearchBox)
+            {
+                if(SearchBox.Tag == null)
+                {
+                    SearchBox.Text = "";
+                }
+                else
+                {
+                    SearchBox.Text = (string)SearchBox.Tag;
+                }
+            }
+        }
+
+        private void SearchBox_LostKeyboardFocus(object sender, System.Windows.Input.KeyboardFocusChangedEventArgs e)
+        {
+            if(SearchBox.Text != DEFAULT_SEARCHBOX_TEXT)
+            {
+                SearchBox.Tag = SearchBox.Text;
+            }
+
+            SearchBox.Text = DEFAULT_SEARCHBOX_TEXT;
+        }
     }
 }
