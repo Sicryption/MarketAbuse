@@ -84,7 +84,7 @@
                     <Label Content="{Binding SelectedItem.Information.BuyLimit, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Label Content="Buy Price:"/>
+                    <Label Content="Sell at:"/>
                     <Label Content="{Binding SelectedItem.Prices.BuyPrice, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
@@ -92,7 +92,7 @@
                     <Label Content="{Binding SelectedItem.Prices.BuyPriceTimestamp, ElementName=ItemListbox, Converter={StaticResource utcToLocalTimeConverter}}"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Label Content="Sell Price:"/>
+                    <Label Content="Buy at:"/>
                     <Label Content="{Binding SelectedItem.Prices.SellPrice, ElementName=ItemListbox}" ContentStringFormat="{}{0:#,#.}"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
